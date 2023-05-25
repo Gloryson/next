@@ -45,6 +45,9 @@
 }
 
 .main__second {
+  display: grid;
+  place-content: center;
+  grid-template: 1fr / 1fr;
   background: url('/img/big-liquid-gradient.jpg') no-repeat right;
   background-size: 200% 100%;
 

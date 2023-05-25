@@ -1,5 +1,6 @@
-import Main from './Main/Main';
+import { Main } from './Main/Main';
+import { TorusKnot } from './TorusKnot/TorusKnot';
 
 
 
-export default Main;
+export { Main, TorusKnot};
