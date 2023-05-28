@@ -13,7 +13,6 @@ export function Main () {
       <div className={'main__canvas'}>
         <Main3DCanvas />
       </div>
-      <div className={'burger'}></div>
     </section>
   )
 }

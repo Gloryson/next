@@ -1,10 +1,15 @@
-import { Main } from '@/components';
+import { Cursor, Main, NavigationMenu } from '@/components';
+import { Fragment } from 'react';
 
 
 
 
 export default function App () {
   return (
-    <Main />
+    <Fragment>
+      <NavigationMenu />
+      <Main />
+      <Cursor />
+    </Fragment>
   )
 }

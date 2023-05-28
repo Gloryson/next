@@ -1,0 +1,13 @@
+.cursor {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  backdrop-filter: sepia(75%);
+  cursor: none;
+
+  @media (hover: none) {
+    display: none;
+  }
+}

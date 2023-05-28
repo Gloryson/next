@@ -1,8 +1,3 @@
-@font-face {
-  font-family: 'happy-dance';
-  src: url('/fonts/happy-dance.woff2') format('woff2'), url('/fonts/happy-dance.woff') format('woff');
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
 
 * {
@@ -11,4 +6,17 @@
   box-sizing: border-box;
   font-family: 'Nunito', Arial, Helvetica, sans-serif;
   text-decoration: none;
+  overflow-y: overlay;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    background-color: #00000030;
+  }
+  
+  
+  &::-webkit-scrollbar-thumb {
+    background-color: whitesmoke;
+    border-radius: 5px;
+  }
 }
