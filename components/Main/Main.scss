@@ -56,3 +56,40 @@
     display: none;
   }
 }
+
+.burger {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 160px);
+  width: 150px;
+  height: 150px;
+  background: url('/img/burger.png') no-repeat center;
+  background-size: 100%;
+  cursor: pointer;
+  animation: burger-animation 4s linear infinite;
+
+  @keyframes burger-animation {
+    30% {transform: scale(1);}
+    34% {transform: scale(1.05);}
+    38% {transform: scale(1);}
+    42% {transform: scale(1.05);}
+    44% {transform: scale(1);}
+    46% {transform: rotate(-5deg);}
+    48% {transform: rotate(0);}
+    50% {transform: rotate(5deg);}
+    52% {transform: rotate(0);}
+  }
+
+  @media (max-width: 1000px) {
+    left: calc(100% - 160px);
+  }
+
+  &:hover {
+    animation: none;
+    filter: brightness(110%);
+  }
+
+  &:active {
+    filter: brightness(95%);
+  }
+}
