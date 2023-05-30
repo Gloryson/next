@@ -1,4 +1,4 @@
-import { Cursor, Main, NavigationMenu } from '@/components';
+import { About, Main, NavigationMenu } from '@/components';
 import { Fragment } from 'react';
 
 
@@ -9,7 +9,8 @@ export default function App () {
     <Fragment>
       <NavigationMenu />
       <Main />
-      <Cursor />
+      <About />
+      
     </Fragment>
   )
 }

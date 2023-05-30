@@ -1,11 +1,21 @@
 .cursor {
   position: absolute;
   transform: translate(-50%, -50%);
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   backdrop-filter: sepia(75%);
-  cursor: none;
+
+  &::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #ffffff80;
+    position: absolute;
+    top: calc(50% - 3px);
+    left: calc(50% - 3px);
+  }
 
   @media (hover: none) {
     display: none;

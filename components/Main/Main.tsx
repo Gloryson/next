@@ -1,4 +1,4 @@
-import { Main3DCanvas } from '@/components';
+import { Cursor, Main3DCanvas } from '@/components';
 import './Main.scss';
 
 
@@ -13,6 +13,7 @@ export function Main () {
       <div className={'main__canvas'}>
         <Main3DCanvas />
       </div>
+      <Cursor />
     </section>
   )
 }

@@ -11,7 +11,7 @@ export function Cursor () {
 
   useEffect(() => {
     window.addEventListener('mousemove', e => {
-      setMousePosition( { x: e.clientX, y: e.clientY } );
+      setMousePosition( { x: e.pageX, y: e.pageY } );
     })
   }, [])
 
