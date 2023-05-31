@@ -1,4 +1,4 @@
-import { About, Main, NavigationMenu } from '@/components';
+import { Big3DSection, Main, NavigationMenu, Projects } from '@/components';
 import { Fragment } from 'react';
 
 
@@ -9,7 +9,8 @@ export default function App () {
     <Fragment>
       <NavigationMenu />
       <Main />
-      <About />
+      <Projects />
+      <Big3DSection />
       
     </Fragment>
   )

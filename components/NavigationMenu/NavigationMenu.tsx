@@ -8,7 +8,6 @@ export function NavigationMenu () {
     <nav>
       <Link href={'#'}>Home</Link>
       <Link href={'#'}>About</Link>
-      <Link href={'#'}>Info</Link>
       <Link href={'#'}>Contacts</Link>
     </nav>
   )
