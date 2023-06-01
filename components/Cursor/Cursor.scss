@@ -4,7 +4,8 @@
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  backdrop-filter: sepia(75%);
+  backdrop-filter: sepia(100%);
+  z-index: 10;
 
   &::before {
     content: '';

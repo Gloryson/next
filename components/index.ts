@@ -6,6 +6,7 @@ import { Main3DCanvas } from './3D/Main3DCanvas/Main3DCanvas';
 import { NavigationMenu } from './NavigationMenu/NavigationMenu';
 import { TorusKnot } from './3D/TorusKnot/TorusKnot';
 import { Projects } from './Projects/Projects';
+import { ProjectCard } from './ProjectCard/ProjectCard';
 
 
 
@@ -19,5 +20,6 @@ export {
   NavigationMenu,
   Big3DSection,
   Big3DSectionCanvas,
-  Projects
+  Projects,
+  ProjectCard
 };
