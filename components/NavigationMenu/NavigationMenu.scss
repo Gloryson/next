@@ -10,15 +10,21 @@ nav {
   z-index: 100;
   opacity: 0.5;
   transition-duration: 500ms;
-
+  
   @media (hover: none) {
     opacity: 1;
   }
-
+  
   &:hover {
+    background: linear-gradient(90deg, #ed373450, #0c537f50);
     backdrop-filter: blur(5px);
     opacity: 1;
+
+    @media (hover: none) {
+      backdrop-filter: none;
+    }
   }
+
 
   a {
     font-size: 20px;

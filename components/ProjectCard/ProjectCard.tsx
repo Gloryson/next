@@ -1,4 +1,8 @@
+'use client'
+
 import Link from 'next/link';
+import { useRef } from 'react';
+import { useOnScreen } from '@/hooks';
 import './ProjectCard.scss';
 
 
@@ -13,8 +17,11 @@ interface ProjectCardProps {
 
 export function ProjectCard ( { imgURL, title, text, deployURL, githubURL }: ProjectCardProps ) {
 
+  const ref = useRef<HTMLDivElement>(null);
+  const isVisible = useOnScreen(ref);
+
   return(
-    <div className={'project__card'}>
+    <div ref={ref} className={'project__card' + ' ' + (isVisible ? 'in' : 'out')}>
       <div className={'project__card__image'} style={{backgroundImage: imgURL}}></div>
       <div className={'project__card__description'}>
         <h2>{title}</h2>

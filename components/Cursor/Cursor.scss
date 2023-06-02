@@ -22,3 +22,7 @@
     display: none;
   }
 }
+
+.invert {
+  backdrop-filter: invert(100%);
+}
