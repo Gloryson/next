@@ -4,25 +4,10 @@
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  backdrop-filter: sepia(100%);
+  backdrop-filter: brightness(110%) saturate(200%) hue-rotate(90deg);
   z-index: 10;
-
-  &::before {
-    content: '';
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background-color: #ffffff80;
-    position: absolute;
-    top: calc(50% - 3px);
-    left: calc(50% - 3px);
-  }
 
   @media (hover: none) {
     display: none;
   }
-}
-
-.invert {
-  backdrop-filter: invert(100%);
 }

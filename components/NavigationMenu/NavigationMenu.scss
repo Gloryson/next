@@ -12,6 +12,9 @@ nav {
   transition-duration: 500ms;
   
   @media (hover: none) {
+    background-color: #ed373450;
+    backdrop-filter: blur(5px);
+    height: 60px;
     opacity: 1;
   }
   
@@ -19,10 +22,6 @@ nav {
     background: linear-gradient(90deg, #ed373450, #0c537f50);
     backdrop-filter: blur(5px);
     opacity: 1;
-
-    @media (hover: none) {
-      backdrop-filter: none;
-    }
   }
 
 

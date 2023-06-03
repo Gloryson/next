@@ -8,7 +8,7 @@ export default function App () {
   return (
     <Fragment>
       <Main />
-      <Projects />   
+      <Projects />
     </Fragment>
   )
 }

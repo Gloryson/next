@@ -5,6 +5,8 @@
   height: 100vh;
   background: url('/img/big-liquid-gradient.jpg') no-repeat center;
   background-size: cover;
+  position: fixed;
+  z-index: -1;
 
   @media (max-width: 1000px) {
     grid-template: 1fr / 1fr;
