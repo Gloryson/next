@@ -1,8 +1,8 @@
 'use client'
 
 import { Canvas } from '@react-three/fiber';
-import { TorusKnot } from '@/components';
 import { Environment } from '@react-three/drei';
+import { TorusKnot } from '@/components';
 
 
 

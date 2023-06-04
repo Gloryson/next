@@ -16,7 +16,6 @@
 .main__title {
   display: grid;
   place-content: center;
-  backdrop-filter: invert(100%);
 
   .title__image {
     width: calc(100vw / 2.5);
@@ -42,10 +41,6 @@
 }
 
 .main__canvas {
-  display: grid;
-  place-content: center;
-  grid-template: 1fr / 1fr;
-
   @media (max-width: 1000px) {
     display: none;
   }
