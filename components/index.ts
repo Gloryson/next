@@ -1,19 +1,9 @@
-import { Main } from './Main/Main';
-import { Main3DCanvas } from './3D/Main3DCanvas/Main3DCanvas';
-import { NavigationMenu } from './NavigationMenu/NavigationMenu';
-import { TorusKnot } from './3D/TorusKnot/TorusKnot';
-import { Projects } from './Projects/Projects';
-import { ProjectCard } from './ProjectCard/ProjectCard';
+import { BigScrollComponent } from './BigScrollComponent/BigScrollComponent';
+import { MainFixedBackground } from './MainFixedBackground/MainFixedBackground';
+import { MainTitle } from './MainTitle/MainTitle';
 
 
 
 
 
-export {
-  Main,
-  TorusKnot,
-  Main3DCanvas,
-  NavigationMenu,
-  Projects,
-  ProjectCard
-};
+export { MainFixedBackground, BigScrollComponent, MainTitle };

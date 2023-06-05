@@ -1,0 +1,33 @@
+.title__container {
+  display: grid;
+  place-content: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    position: absolute;
+    overflow: hidden;
+
+    &:nth-child(1) {
+      transform: translateY(-15%);
+    }
+
+    &:nth-child(3) {
+      transform: translateY(15%);
+    }
+
+    span {
+      font-size: 100px;
+      font-weight: 900;
+    }
+  }
+}

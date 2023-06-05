@@ -1,4 +1,3 @@
-import { NavigationMenu } from '@/components';
 import './globals.scss';
 
 
@@ -17,7 +16,6 @@ export default function RootLayout ({ children }: { children: React.ReactNode } 
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       </head>
       <body>
-        <NavigationMenu />
         { children }
       </body>
     </html>
