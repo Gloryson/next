@@ -1,14 +1,16 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect } from 'react';
+import { useAppDispatch } from '@/store/store';
+import { setScrollPosition } from '@/store/scrollSlice';
 
 
 
 
 export function useScrollPosition () {
 
-  const [scrollPosition, setScrollPosition] = useState(0);
+  const dispatch = useAppDispatch();
 
   const listenScroll = useCallback(() => {
-    setScrollPosition(document.documentElement.scrollTop);
+    dispatch(setScrollPosition(document.documentElement.scrollTop));
   }, [])
 
   useEffect(() => {
@@ -16,5 +18,4 @@ export function useScrollPosition () {
     return () => window.removeEventListener('scroll', listenScroll);
   }, [])
 
-  return scrollPosition;
 }

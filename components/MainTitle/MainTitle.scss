@@ -13,21 +13,34 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
-    max-height: 100vh;
     position: absolute;
     overflow: hidden;
 
     &:nth-child(1) {
-      transform: translateY(-15%);
+      transform: translateY(calc(-40px + -6vw));
     }
 
     &:nth-child(3) {
-      transform: translateY(15%);
+      transform: translateY(calc(40px + 6vw));
     }
 
     span {
-      font-size: 100px;
+      font-size: calc(40px + 5vw);
       font-weight: 900;
+      text-shadow: 0 0 7px #00000050;
+    }
+  }
+
+  .mouse__scroll__down {
+    width: 50px;
+    height: 50px;
+    background: url('/img/svg/mouse-scroll-down.svg') no-repeat center;
+    background-size: 100%;
+    bottom: 5vh;
+    left: calc(50% - 25px);
+
+    @media (hover: none) {
+      bottom: 15vh;
     }
   }
 }

@@ -1,42 +1,37 @@
 'use client'
 
-
-import { useScrollPosition } from '@/hooks';
+import { useAppSelector } from '@/store/store';
 import './MainTitle.scss';
 
 
 
 export function MainTitle () {
 
-  const pos = useScrollPosition();
+  const pos = useAppSelector(state => state.scroll.position);
 
 
   return pos < window.innerHeight ? (
     <section className={'title__container'}>
       <div>
-        <span style={{transform: `translate(-${pos}px, -${pos}px)`}}>W</span>
-        <span style={{transform: `translate(0, -${pos}px)`}}>E</span>
-        <span style={{transform: `translate(${pos}px, -${pos}px)`}}>B</span>
+        <span style={{transform: `translate(-${pos}px, -${pos}px) rotate(-${pos}deg)`}}>W</span>
+        <span style={{transform: `translate(${pos / 1.5}px, -${pos}px) rotate(${pos}deg)`}}>EB</span>
       </div>
       <div>
-        <span style={{transform: `translate(-${pos * 2}px)`}}>D</span>
-        <span style={{transform: `translate(-${pos * 2}px, -${pos / 1.5}px)`}}>E</span>
-        <span style={{transform: `translate(-${pos * 1.5}px, -${pos}px)`}}>V</span>
-        <span style={{transform: `translate(-${pos}px, ${pos}px)`}}>E</span>
-        <span style={{transform: `translate(0, ${pos}px)`}}>L</span>
-        <span style={{transform: `translate(${pos}px, ${pos}px)`}}>O</span>
-        <span style={{transform: `translate(${pos * 1.5}px, -${pos}px)`}}>P</span>
-        <span style={{transform: `translate(${pos * 2}px, -${pos / 1.5}px)`}}>E</span>
-        <span style={{transform: `translate(${pos * 2}px)`}}>R</span>
+        <span style={{transform: `translate(-${pos * 2}px) rotate(-${pos / 2}deg)`}}>DE</span>
+        <span style={{transform: `translate(-${pos * 1.75}px, -${pos * 1.25}px)`}}>V</span>
+        <span style={{transform: `translate(-${pos * 1.25}px, ${pos * 1.5}px) rotate(-${pos}deg)`}}>E</span>
+        <span style={{transform: `translate(-${pos / 2}px, -${pos * 1.75}px) rotate(${pos}deg)`}}>L</span>
+        <span style={{transform: `translate(${pos * 1.25}px, ${pos * 1.5}px) rotate(-${pos}deg)`}}>O</span>
+        <span style={{transform: `translate(${pos * 1.75}px, -${pos * 1.25}px)`}}>P</span>
+        <span style={{transform: `translate(${pos * 2}px) rotate(${pos / 2}deg)`}}>ER</span>
       </div>
       <div>
-        <span style={{transform: `translate(-${pos * 2}px)`}}>W</span>
-        <span style={{transform: `translate(-${pos * 2}px, ${pos / 1.5}px)`}}>L</span>
-        <span style={{transform: `translate(-${pos / 2}px, ${pos}px)`}}>A</span>
-        <span style={{transform: `translate(${pos / 3}px, ${pos}px)`}}>D</span>
-        <span style={{transform: `translate(${pos * 2}px, ${pos / 1.5}px)`}}>E</span>
-        <span style={{transform: `translate(${pos * 2}px)`}}>K</span>
+        <span style={{transform: `translate(-${pos * 2}px, ${pos / 1.5}px) rotate(${pos}deg)`}}>WL</span>
+        <span style={{transform: `translate(-${pos / 2}px, ${pos}px) rotate(-${pos}deg)`}}>A</span>
+        <span style={{transform: `translate(${pos / 3}px, ${pos}px) rotate(${pos}deg)`}}>D</span>
+        <span style={{transform: `translate(${pos * 2}px, ${pos / 1.5}px) rotate(-${pos}deg)`}}>EK</span>
       </div>
+      <div className={'mouse__scroll__down'} style={{opacity: 1 - pos / 300}}></div>
     </section>
   ) : (
     <></>

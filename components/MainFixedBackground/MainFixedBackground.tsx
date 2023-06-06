@@ -1,13 +1,13 @@
 'use client'
 
-import { useScrollPosition } from '@/hooks';
+import { useAppSelector } from '@/store/store';
 import './MainFixedBackground.scss';
 
 
 
 export function MainFixedBackground () {
 
-  const scrollPosition = useScrollPosition();
+  const scrollPosition = useAppSelector(state => state.scroll.position);
 
   
   return(
