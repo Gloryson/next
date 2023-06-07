@@ -7,7 +7,7 @@ import './MainTitle.scss';
 
 export function MainTitle () {
 
-  const pos = useAppSelector(state => state.scroll.position);
+  const pos = useAppSelector(state => state.scroll.position) / 2;
 
 
   return pos < window.innerHeight ? (

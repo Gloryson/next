@@ -1,15 +1,16 @@
 import { BigScrollComponent, MainFixedBackground, MainTitle } from '@/components';
-import { Fragment } from 'react';
+import { AppProvider } from '@/store/AppProvider';
 
 
 
 
 export default function App () {
+  
   return (
-    <Fragment>
+    <AppProvider>
       <MainFixedBackground />
       <BigScrollComponent />
       <MainTitle />
-    </Fragment>
+    </AppProvider>
   )
 }

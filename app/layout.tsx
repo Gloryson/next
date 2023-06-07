@@ -1,5 +1,4 @@
 import './globals.scss';
-import { AppProvider } from '@/store/AppProvider';
 
 
 export const metadata = {
@@ -17,9 +16,7 @@ export default function RootLayout ({ children }: { children: React.ReactNode } 
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       </head>
       <body>
-        <AppProvider>
-          {children}
-        </AppProvider>
+        { children }
       </body>
     </html>
   )
