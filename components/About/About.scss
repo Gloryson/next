@@ -1,0 +1,36 @@
+.about {
+  display: grid;
+  place-content: center;
+  width: 80%;
+  height: 80vh;
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  border: 3px solid white;
+  border-radius: 15px;
+  font-size: 30px;
+  transform: perspective(10px) translateZ(-30px);
+  opacity: 0;
+}
+
+.about-in {
+  opacity: 1;
+  transform: perspective(10px) translateZ(0px);
+  animation: about-in 0.5s linear 1;
+
+  @keyframes about-in {
+    0% {transform: perspective(10px) translateZ(-30px); opacity: 0;}
+    100% {transform: perspective(10px) translateZ(0); opacity: 1;}
+  }
+}
+
+.about-out {
+  opacity: 0;
+  transform: perspective(10px) translateZ(-30px);
+  animation: about-out 0.5s linear 1;
+
+  @keyframes about-out {
+    0% {transform: perspective(10px) translateZ(0); opacity: 1;}
+    100% {transform: perspective(10px) translateZ(-30px); opacity: 0;}
+  }
+}

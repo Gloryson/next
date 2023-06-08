@@ -31,7 +31,7 @@ export function MainTitle () {
         <span style={{transform: `translate(${pos / 3}px, ${pos}px) rotate(${pos}deg)`}}>D</span>
         <span style={{transform: `translate(${pos * 2}px, ${pos / 1.5}px) rotate(-${pos}deg)`}}>EK</span>
       </div>
-      <div className={'mouse__scroll__down'} style={{opacity: 1 - pos / 300}}></div>
+      <div className={'mouse__scroll__down'} style={{transform: `translate(0, -${pos * 3}px)`}}></div>
     </section>
   ) : (
     <></>
