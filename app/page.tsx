@@ -1,4 +1,4 @@
-import { About, BigScrollComponent, MainFixedBackground, MainTitle } from '@/components';
+import { About, BigScrollComponent, Contacts, MainFixedBackground, MainTitle, Projects } from '@/components';
 import { AppProvider } from '@/store/AppProvider';
 
 
@@ -12,6 +12,8 @@ export default function App () {
       <BigScrollComponent />
       <MainTitle />
       <About />
+      <Projects />
+      <Contacts />
     </AppProvider>
   )
 }

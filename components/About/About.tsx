@@ -18,7 +18,7 @@ export function About () {
       }}
     >
       <div className={'about__location'}></div>
-      <h1 className={'about__title'}>HELLO WORLD!<br/>I am frontend developer<br/>from Poland.</h1>
+      <h1 className={'about__title'}>HELLO WORLD<br/>I am frontend developer<br/>from Poland</h1>
       <div className={'about__skills'}></div>
     </section>
   )

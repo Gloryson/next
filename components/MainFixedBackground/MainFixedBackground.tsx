@@ -1,18 +1,19 @@
-'use client'
 
-import { useAppSelector } from '@/store/store';
-import './MainFixedBackground.scss';
 
 
 
 export function MainFixedBackground () {
-
-  const scrollPosition = useAppSelector(state => state.scroll.position);
-
-  
   return(
-    <section className={'main__backgound'}>
-      <h3>{ Math.round(scrollPosition) }</h3>
+    <section
+      style={{
+        width: '100%',
+        height: '100vh',
+        background: 'url(/img/big-liquid-gradient.jpg) no-repeat center',
+        backgroundSize: 'cover',
+        position: 'fixed',
+        zIndex: -1
+      }}
+    >
     </section>
   )
 }
