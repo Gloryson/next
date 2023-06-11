@@ -8,7 +8,7 @@ import './About.scss';
 export function About () {
 
   const pos = useAppSelector(state => state.scroll.position);
-  const height = window.innerHeight;
+  const height = typeof window !== 'undefined' ? window.innerHeight : 0;
   
   return(
     <section className={'about'}

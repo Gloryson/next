@@ -8,9 +8,10 @@ import './MainTitle.scss';
 export function MainTitle () {
 
   const pos = useAppSelector(state => state.scroll.position) / 2;
+  const height = typeof window !== 'undefined' ? window.innerHeight : 0;
 
 
-  return pos < window.innerHeight ? (
+  return pos < height ? (
     <section className={'title__container'}>
       <div>
         <span style={{transform: `translate(-${pos}px, -${pos}px) rotate(-${pos}deg)`}}>W</span>
