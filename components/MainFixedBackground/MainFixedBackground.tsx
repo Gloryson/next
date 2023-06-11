@@ -1,3 +1,4 @@
+import { Cursor } from '@/components';
 
 
 
@@ -14,6 +15,7 @@ export function MainFixedBackground () {
         zIndex: -1
       }}
     >
+      <Cursor />
     </section>
   )
 }

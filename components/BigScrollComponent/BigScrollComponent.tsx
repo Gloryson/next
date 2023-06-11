@@ -9,11 +9,11 @@ export function BigScrollComponent () {
 
   useScrollPosition();
   const scrollPosition = useAppSelector(state => state.scroll.position);
-  const divider: number = (window.innerHeight * 4) / 360;
+  const divider: number = (window.innerHeight * 6.5) / 360;
 
   return(
     <section 
-      style={{ height: '500vh', backdropFilter: `hue-rotate(-${scrollPosition / divider}deg)` }}
+      style={{ height: '750vh', backdropFilter: `hue-rotate(-${scrollPosition / divider}deg)` }}
     >
     </section>
   )

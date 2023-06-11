@@ -2,9 +2,9 @@
   display: grid;
   place-items: center;
   width: 100%;
-  height: 50vh;
+  height: 100vh;
   position: absolute;
-  top: 450vh;
+  top: 650vh;
 }
 
 .contacts__transform__container {
@@ -16,7 +16,7 @@
   transition-duration: 0.5s;
 
   a {
-    font-size: 36px;
+    font-size: 48px;
     font-weight: 900;
     text-shadow: 0 0 5px #00000080;
     padding: 5px;

@@ -1,0 +1,12 @@
+.cursor {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  backdrop-filter: invert(100%) saturate(150%);
+
+  @media (hover: none) {
+    display: none;
+  }
+}

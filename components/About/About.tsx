@@ -14,7 +14,7 @@ export function About () {
     <section className={'about'}
       style={{
         transform: `perspective(100px) translateZ(${height - pos * 2 > 0 ? -(height - pos * 2) : 0}px)`,
-        opacity: pos < height * 1.25 ? pos < 100 ? 0 : 1 : 1 - (pos - height * 1.25) / 500
+        opacity: pos < height * 1.25 ? pos < 100 ? 0 : 1 : 1 - (pos - height * 1.25) / 250
       }}
     >
       <div className={'about__location'}></div>

@@ -1,0 +1,28 @@
+.project__card {
+  width: 95%;
+  max-width: 600px;
+  height: 95%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+  position: relative;
+  transition: all 0.35s;
+  cursor: pointer;
+
+  @media (max-width: 575px) {
+    padding: 0;
+  }
+
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 15px 2px white;
+  }
+}
+
+.project__card__image {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
