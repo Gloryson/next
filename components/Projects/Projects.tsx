@@ -21,12 +21,12 @@ export function Projects () {
 
       <ProjectCard 
         imgURL={'url(/img/projects/project-4.jpg)'}
-        deployURL={'https://gloryson.github.io/3d-project/'}
+        deployURL={'https://gloryson.github.io/shelter/pages/main/'}
       />
 
       <ProjectCard 
         imgURL={'url(/img/projects/project-5.jpg)'}
-        deployURL={'https://gloryson.github.io/shelter/pages/main/'}
+        deployURL={'https://gloryson.github.io/3d-project/'}
       />
 
       <ProjectCard 
@@ -36,17 +36,18 @@ export function Projects () {
 
       <ProjectCard 
         imgURL={'url(/img/projects/project-7.jpg)'}
-        deployURL={'https://gloryson.github.io/CSS-filter-converter-from-black-to-any-color/'}
+        deployURL={'https://gloryson.github.io/gloryson/'}
+        
       />
 
       <ProjectCard 
         imgURL={'url(/img/projects/project-8.jpg)'}
-        deployURL={'https://gloryson.github.io/ISS-tracker/'}
+        deployURL={'https://gloryson.github.io/CSS-filter-converter-from-black-to-any-color/'}
       />
 
       <ProjectCard 
         imgURL={'url(/img/projects/project-9.jpg)'}
-        deployURL={'https://gloryson.github.io/gloryson/'}
+        deployURL={'https://gloryson.github.io/ISS-tracker/'}
       />
 
       <ProjectCard 
