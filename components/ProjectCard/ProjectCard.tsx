@@ -27,7 +27,7 @@ export function ProjectCard ( { imgURL, deployURL }: ProjectCardProps ) {
     >
       <div
         className={'project__card__image'}
-        style={{backgroundImage: ('https://gloryson.github.io/next' + imgURL)}}
+        style={{backgroundImage: imgURL}}
       ></div>
     </Link>
   )
