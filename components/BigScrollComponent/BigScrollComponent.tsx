@@ -1,6 +1,6 @@
 'use client'
 
-import { useScrollPosition } from '@/hooks';
+import { useScrollPosition, useWindowHeight } from '@/hooks';
 import { useAppSelector } from '@/store/store';
 
 
@@ -9,7 +9,7 @@ export function BigScrollComponent () {
 
   useScrollPosition();
   const scrollPosition = useAppSelector(state => state.scroll.position);
-  const divider: number = typeof window !== 'undefined' ? window.innerHeight * 6.5 / 360 : 1;
+  const divider: number = useWindowHeight() * 6.5 / 360;
 
   return(
     <section 

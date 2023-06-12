@@ -1,6 +1,7 @@
 'use client'
 
 import { useAppSelector } from '@/store/store';
+import { useWindowHeight } from '@/hooks';
 import './About.scss';
 
 
@@ -8,7 +9,7 @@ import './About.scss';
 export function About () {
 
   const pos = useAppSelector(state => state.scroll.position);
-  const height = typeof window !== 'undefined' ? window.innerHeight : 0;
+  const height = useWindowHeight();
   
   return(
     <section className={'about'}
