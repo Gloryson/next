@@ -14,7 +14,7 @@ export default function RootLayout ({ children }: { children: React.ReactNode } 
         <meta charSet='UTF-8' />
         <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-        <link rel='shortcut icon' href='/img/favicon.png' type='image/x-icon' />
+        <link rel='shortcut icon' href='https://gloryson.github.io/next/img/favicon.png' type='image/x-icon' />
       </head>
       <body>
         { children }
