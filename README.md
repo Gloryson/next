@@ -1,2 +1,3 @@
-## next
-I am learning Next.js here. This repository is just a sandbox for my experiments.
+## NextJS CV  
+My new portfolio written in next.  
+[**Deploy link**](https://gloryson.github.io/next)
