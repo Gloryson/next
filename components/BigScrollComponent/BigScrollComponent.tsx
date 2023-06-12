@@ -9,7 +9,7 @@ export function BigScrollComponent () {
 
   useScrollPosition();
   const scrollPosition = useAppSelector(state => state.scroll.position);
-  const divider: number = typeof window !== 'undefined' ? window.innerHeight * 6.5 / 360 : 0;
+  const divider: number = typeof window !== 'undefined' ? window.innerHeight * 6.5 / 360 : 1;
 
   return(
     <section 
