@@ -9,7 +9,7 @@ export function MainFixedBackground () {
       style={{
         width: '100%',
         height: '100vh',
-        background: 'url(img/big-liquid-gradient.jpg) no-repeat center',
+        background: 'url(https://gloryson.github.io/next/img/big-liquid-gradient.jpg) no-repeat center',
         backgroundSize: 'cover',
         position: 'fixed',
         zIndex: -1
